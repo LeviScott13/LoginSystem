@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <title>HighRidge Poultry</title>
+    <title>Big Trucks</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -10,10 +10,7 @@
 <body>
     <nav class="z-depth-0 grey lighten-4">
         <div class="nav-wrapper container">
-            <a href="#" class="brand-logo">
-                <img src="Img/chicken.png" alt="" style="width: 35px; margin-top: 10px;">
-            </a>
-            <span style="color: black; margin-left: 60px; font-size: 20px;">HighRidge Poultry</span>
+            <span style="color: black; margin-left: 60px; font-size: 20px;">Big Trucks</span>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li class="logged-in">
                     <a href="#" class="grey-text" id="logout">Logout</a>
@@ -27,7 +24,7 @@
                 <li>
                     <div>
                         <div style="position: absolute;">
-                            <pre id=signedIn style="color: red; margin: 0 auto 0 auto; margin-left: 30px; visibility: hidden;">You've signed in!</pre>                            
+                            <pre id=signedIn style="color: red; margin: 0 auto 0 auto; margin-left: 30px; visibility: hidden;">Signed in!</pre>                            
                         </div>
                     </div>
                 </li>
@@ -40,16 +37,16 @@
     <div id="modal-signup" class="modal">
         <div class="modal-content">
             <h4>
-                Sign Up
+                Sign-Up
             </h4>
             <br>
             <form id="signup-form">
-                <div class="input-field">
-                    <input type="email" id="signup-email" required>
+                <div class="input-field" style="background-color: black;">
+                    <input type="email" id="signup-email" style="background-color: black; color: white;" required>
                     <label for="signup-email">Email Address</label>
                 </div>
-                <div class="input-field">
-                    <input type="password" id="signup-password" required>
+                <div class="input-field" style="background-color: black; color: white;">
+                    <input type="password" id="signup-password" style="background-color: black; color: white;" required>
                     <label for="signup-password">Choose Password</label>
                 </div>
                 <button class="btn red darken-2 z-depth-0"> Sign Up</button>
@@ -66,12 +63,12 @@
             </h4>
             <br>
             <form id="login-form">
-                <div class="input-field">
-                    <input type="email" id="login-email" required>
+                <div class="input-field" style="background-color: black;">
+                    <input type="email" id="login-email" style="background-color: black; color: white;" required>
                     <label for="login-email">Email Address</label>
                 </div>
-                <div class="input-field">
-                    <input type="password" id="login-password" required>
+                <div class="input-field" style="background-color: black; color: white;">
+                    <input type="password" id="login-password" style="background-color: black; color: white;" required>
                     <label for="login-password">Choose Password</label>
                 </div>
                 <button class="btn red darken-2 z-depth-0"> Login</button>
@@ -80,7 +77,22 @@
     </div>
 
     <!-- Trucks List -->
-
+    <br>
+    <div style="text-align: center; background-color: transparent;" id=warning>
+        <div style="background-color: white; width: 30%; margin: 10 auto 0 auto">
+            <br><br>
+            <span style="color: red; font-weight: bold;">
+                Please DO NOT sign up or use a real email and password. I've provided one below.
+            </span>
+            <br><br>
+            <span style="color: black; ">
+                Login username: <span style="color: black; font-weight: bold;">testing123@test.com</span>
+                <br>
+                Login password: <span style="color: black; font-weight: bold;">testing123</span>
+            </span>
+            <br><br>
+        </div>
+    </div>
     <div id=trucks class="container" style="margin-top: 40px; visibility: hidden;">
         <ul class="collapsible z-depth-0 guides" style="border: none;">
 

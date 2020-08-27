@@ -10,18 +10,21 @@ auth.onAuthStateChanged(user => {
     
     var signedIn = document.getElementById('signedIn');
     var trucks = document.getElementById('trucks');
-
+    var warning = document.getElementById('warning');
     // if logged in
     if(user){
         console.log('user logged in ', user);
         signedIn.style.visibility = 'visible';
         trucks.style.visibility = 'visible';
+        warning.style.display = 'none';
     }
     //if logged out
     else{
         console.log('user logged out');
         signedIn.style.visibility = 'hidden';
         trucks.style.visibility = 'hidden';
+        warning.style.display = 'inline';
+
     }
 });
 
